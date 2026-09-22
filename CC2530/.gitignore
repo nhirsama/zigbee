@@ -1,0 +1,21 @@
+# SDCC / embedded build outputs
+firmware/**/build/
+firmware/**/backup/
+firmware/**/*.asm
+firmware/**/*.ihx
+firmware/**/*.hex
+firmware/**/*.lk
+firmware/**/*.lst
+firmware/**/*.map
+firmware/**/*.mem
+firmware/**/*.rel
+firmware/**/*.rst
+firmware/**/*.sym
+firmware/**/*.bin
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

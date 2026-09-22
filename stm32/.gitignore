@@ -1,0 +1,9 @@
+firmware/build/
+firmware/tests/build/
+*.o
+*.d
+*.elf
+*.hex
+*.bin
+*.map
+*.lst

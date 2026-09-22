@@ -1,9 +1,98 @@
-firmware/build/
-firmware/tests/build/
+build/
+**/firmware/build/
+**/firmware/tests/build/
+**/firmware/**/build/
+
+# GCC / arm-none-eabi
 *.o
 *.d
+*.a
 *.elf
 *.hex
 *.bin
 *.map
 *.lst
+*.srec
+*.out
+
+# SDCC
+*.rel
+*.ihx
+*.asm
+*.lk
+*.mem
+*.sym
+*.rst
+*.adb
+*.cdb
+*.omf
+*.lnk
+
+# --- 烧录备份 / 芯片读出（本机产物，不能当源码） ---
+backup/
+**/firmware/**/backup/
+*.flash.bin
+
+# --- 未改过的官方 SDK
+# 当前 Linux/SDCC 裸机工程不依赖它；GenericApp 也仍是官方 Hello World。
+CC2530/firmware/zstack-cc2530-2.5.1a/
+
+# --- IAR / Keil 本机输出（若以后打开 Z-Stack 工程） ---
+**/Debug/
+**/Release/
+**/settings/
+**/Obj/
+**/List/
+**/Exe/
+*.dep
+*.pbi
+*.pbd
+*.dbgdt
+*.wsdt
+*.crun
+*.browse
+*.sfr
+*.uvguix.*
+*.uvopt
+*.uvoptx
+*.bak
+*.Bak
+
+
+*.local.h
+app_config.local.h
+.env
+.env.*
+!.env.example
+
+# --- IDE / 语言服务 ---
+.idea/
+.vscode/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+.clangd/
+.cache/
+compile_commands.json
+.gdb_history
+openocd.log
+*.swp
+*.swo
+*~
+
+# --- Python 辅助脚本 ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- 系统垃圾 ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.orig
+*.rej
+*.tmp
+*.log
+
+/整理资料/
